@@ -14,6 +14,7 @@ function check() {
     let check_2 = document.getElementById("check2");
     let check_3 = document.getElementById("check3");
     let check_4 = document.getElementById("check4");
+    let encouragement = document.getElementById("encourage").value;
     
     // check the answer
     if (q1 === "2") {
@@ -80,6 +81,18 @@ function check() {
     let percent = (score/4 * 100);
 
     // print the score to user 
-    setTimeout(function(){alert("Your score is: " + score + "/4 " + "(" + percent + "%)");}, 1)
+    setTimeout(function(){alert("Your score is: " + score + "/4 " + "(" + percent + "%)");}, 0)
+
+
+    // encourage  
+    if (score === 4) {
+        document.getElementById("encourage").innerHTML="Well Done!"
+    } else if (score === 3) {
+        document.getElementById("encourage").innerHTML="You can do it!"
+    } else if (score === 2) {
+        document.getElementById("encourage").innerHTML="Don't give up!"
+    } else if (score < 2) {
+        document.getElementById("encourage").innerHTML="Seriously?"
+    }
     
 }
