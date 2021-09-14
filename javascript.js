@@ -81,18 +81,18 @@ function check() {
     let percent = (score/4 * 100);
 
     // print the score to user 
-    setTimeout(function(){alert("Your score is: " + score + "/4 " + "(" + percent + "%)");}, 0)
+    setTimeout(function(){alert("Your score is: " + score + "/4 " + "(" + percent + "%)");}, 0);
 
 
     // encourage  
     if (score === 4) {
-        document.getElementById("encourage").innerHTML="Well Done!"
+        document.getElementById("encourage").innerHTML="Well Done!";
     } else if (score === 3) {
-        document.getElementById("encourage").innerHTML="You can do it!"
+        document.getElementById("encourage").innerHTML="You can do it!";
     } else if (score === 2) {
-        document.getElementById("encourage").innerHTML="Don't give up!"
+        document.getElementById("encourage").innerHTML="Don't give up!";
     } else if (score < 2) {
-        document.getElementById("encourage").innerHTML="Seriously?"
+        document.getElementById("encourage").innerHTML="Seriously?";
     }
     
 }
